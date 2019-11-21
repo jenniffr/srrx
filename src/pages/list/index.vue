@@ -8,7 +8,13 @@
 export default {
   data () {
     return {
+      list:[]
     }
+  },
+  onLoad (option){
+    console.log(option.type)
+    this.list = require('@/data/' + option.type + '.json')
+    console.log(this.list)
   },
   methods: {
   },

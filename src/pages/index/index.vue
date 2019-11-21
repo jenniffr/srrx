@@ -1,7 +1,7 @@
 <template>
   <div>
     <i-grid i-class="no-border"> 
-    <i-grid-item v-for="grid in grids" :key="grid" i-class="no-border">
+    <i-grid-item @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
         <i-grid-icon>
             <image :src="grid.image" />
         </i-grid-icon>
@@ -11,17 +11,9 @@
     </i-grid>
     <i-panel :title="title_name">
     <view style="padding: 15px;">
-      <i-card i-class="split" title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-         <view slot="content">内容不错</view>
-         <view slot="footer">尾部内容</view>
-      </i-card>
-      <i-card i-class="split" title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-         <view slot="content">内容不错</view>
-         <view slot="footer">尾部内容</view>
-      </i-card>
-      <i-card i-class="split" title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-         <view slot="content">内容不错</view>
-         <view slot="footer">尾部内容</view>
+      <i-card v-for="item in top" :key="item" i-class="split" :extra="item.name" :thumb="item.image">
+         <view slot="content">{{item.remark}}</view>
+         <view slot="footer">{{item.singer}}</view>
       </i-card>
     </view>
     </i-panel>
@@ -40,13 +32,18 @@ export default {
         {title:"视频",image:"/static/images/3.png"}
       ],
       top:[
-        {name:"歌曲名1",singer:"姓名1",image:"图片1",remark:"介绍1"},
-        {name:"歌曲名2",singer:"姓名2",image:"图片2",remark:"介绍2"},
-        {name:"歌曲名3",singer:"姓名3",image:"图片3",remark:"介绍3"},
+        {name:"歌曲名1",singer:"姓名1",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍1"},
+        {name:"歌曲名2",singer:"姓名2",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍2"},
+        {name:"歌曲名3",singer:"姓名3",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍3"}
       ]
     }
   },
   methods: {
+    goType(type){
+      console.log(type)
+      let url = '../list/main?type=' + type.title
+      mpvue.navigateTo({ url })
+    }
   },
 
   created () {
