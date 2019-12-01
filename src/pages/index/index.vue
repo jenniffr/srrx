@@ -8,12 +8,12 @@
     >
       <block v-for="img in imgUrls" :key="img">
         <swiper-item>
-          <image :src="img" style="width:100%" />
+          <image :src="img" style="height:100%" />
         </swiper-item>
       </block>
     </swiper>
     <i-grid i-class="no-border"> 
-    <i-grid-item @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
+    <i-grid-item @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border" >
         <i-grid-icon>
             <image :src="grid.image" />
         </i-grid-icon>
@@ -49,9 +49,10 @@ export default {
         {name:"歌曲名3",singer:"姓名3",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍3"}
       ],
       imgUrls: [
-        'http://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-        'http://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-        'http://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
+        'http://5b0988e595225.cdn.sohucs.com/images/20181216/c7d3e703c8c14c378c32e4c0ace00a8d.jpeg',
+        'http://image.juooo.com/group1/M00/01/DB/rAoKmVw77K-ALkeHAAFc5XQmwJI692.jpg',
+        'https://img.rednet.cn/2019/01-21/50788649-5f11-4b2b-bd32-56d1790cd6e7.jpg',
+        'https://img.rednet.cn/2019/01-21/a8384c2c-a806-4341-a486-9e9ea3d708f6.jpg'
       ],
       indicatorDots: false,
       autoplay: false,

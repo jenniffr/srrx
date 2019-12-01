@@ -2,12 +2,12 @@
   "pages": [
     "pages/index/main",
     "pages/list/main",
-    "pages/map/main",
+    "pages/moment/main",
     "pages/mine/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#228B22",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
@@ -23,8 +23,8 @@
       "iconPath": "static/images/home.1.png",
       "selectedIconPath": "static/images/home.png"
     }, {
-      "text": "地图",
-      "pagePath": "pages/map/main",
+      "text": "动态",
+      "pagePath": "pages/moment/main",
       "iconPath": "static/images/4.1.png",
       "selectedIconPath": "static/images/4.png"
       }, {
