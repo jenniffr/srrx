@@ -1,0 +1,37 @@
+[
+    {
+        "name":"《诗人的路途》",
+        "singer":"郑云龙/廖佳琳",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“流浪诗人有自己的旅途 在喧闹的巷口 在荒凉的峡谷 在远离尘埃的角落”",
+        "type":1
+    },
+    {
+        "name":"《La Vita》",
+        "singer":"仝卓/马佳/星元",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Quanti giorni vuoti 多少虚无的日子 Quanti giorni tristi 多少悲伤的日子 In questa nostra vita 我们无时无刻不经历着”",
+        "type":2
+    },
+    {
+        "name":"《慢慢喜欢你》",
+        "singer":"王晰/郑云龙",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“书里总爱写到喜出望外的夜晚”",
+        "type":3
+    },
+    {
+        "name":"《鹿 Be Free》",
+        "singer":"阿云嘎/蔡程昱",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“看青草 穿白雪 听见森林的音乐”",
+        "type":3
+    },
+    {
+        "name":"《故乡的云》",
+        "singer":"余笛/洪之光",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“天边飘过故乡的云 它不停地向我召唤”",
+        "type":3
+    }
+  ]

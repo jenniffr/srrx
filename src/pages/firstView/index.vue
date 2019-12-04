@@ -2,10 +2,10 @@
   <div id="firstView">
       <swiper @change="handleChange" :indicator-dots="index !== 1" indicator-color="pink" indicator-active-color="green">
           <swiper-item>
-              <img scr="/static/images/bz2.jpg" alt="">
+              <img src="/static/images/bz2.jpg" alt="">
           </swiper-item>
           <swiper-item>
-              <img scr="/static/images/bz3.png" alt="">
+              <img src="/static/images/bz3.png" alt="">
           </swiper-item>
       </swiper>
       <button @click="toIndex" class="btn" v-show="index === 1">开启声入人心之旅</button>
@@ -26,8 +26,8 @@ export default {
           this.index = event.mp.detail.current
       },
       toIndex() {
-        wx.navigateTo({
-          url: '/pages/index/main'
+        wx.switchTab({
+          url:'/pages/index/main'
         })
       }
   }

@@ -14,20 +14,21 @@
         </swiper-item>
       </block>
     </swiper>
+
     <i-grid i-class="no-border"> 
-    <i-grid-item @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border" >
+    <i-grid-item @click="goList(grid)" v-for="grid in grids" :key="grid" i-class="no-border" >
         <i-grid-icon>
             <image :src="grid.image" />
         </i-grid-icon>
         <i-grid-label>{{grid.title}}</i-grid-label>
     </i-grid-item>
-   
     </i-grid>
-    <i-panel :title="title_name">
+
+    <i-panel title="热门歌曲">
     <view style="padding: 15px;">
-      <i-card v-for="item in top" :key="item" i-class="split" :extra="item.name" :thumb="item.image">
-         <view slot="content">{{item.remark}}</view>
-         <view slot="footer">{{item.singer}}</view>
+      <i-card @click="goType(item.type)" v-for="item in top" :key="item" i-class="split" :extra="item.name" :thumb="item.image">
+         <view slot="content">片段:{{item.remark}}</view>
+         <view slot="footer">歌手:{{item.singer}}</view>
       </i-card>
     </view>
     </i-panel>
@@ -35,21 +36,18 @@
 </template>
 
 <script>
+import card from '@/components/card'
+import top from '@/data/top.json'
 
 export default {
   data () {
     return {
-      title_name:"热门",
       grids:[
-        {title:"人物",image:"/static/images/1.png"},
-        {title:"歌曲",image:"/static/images/2.png"},
-        {title:"视频",image:"/static/images/3.png"}
+        {title:"音乐剧",image:"/static/images/1.png","url":'../list/main?type=1'},
+        {title:"歌剧",image:"/static/images/2.png","url":'../list/main?type=2'},
+        {title:"古风",image:"/static/images/3.png","url":'../list/main?type=3'}
       ],
-      top:[
-        {name:"歌曲名1",singer:"姓名1",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍1"},
-        {name:"歌曲名2",singer:"姓名2",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍2"},
-        {name:"歌曲名3",singer:"姓名3",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍3"}
-      ],
+      top:top,
       imgUrls: [
         'http://5b0988e595225.cdn.sohucs.com/images/20181216/c7d3e703c8c14c378c32e4c0ace00a8d.jpeg',
         'http://image.juooo.com/group1/M00/01/DB/rAoKmVw77K-ALkeHAAFc5XQmwJI692.jpg',
@@ -62,10 +60,20 @@ export default {
       duration: 1000
     }
   },
+
+  component: {
+    card
+  },
+
   methods: {
-    goType(type){
+     goList(type){
       console.log(type)
       let url = '../list/main?type=' + type.title
+      mpvue.navigateTo({ url })
+    },
+    goType(type){
+      //console.log(type)
+      let url = '../list/main?type=' + type
       mpvue.navigateTo({ url })
     }
   },

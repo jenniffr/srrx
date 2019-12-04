@@ -1,0 +1,37 @@
+[
+        {
+            "name":"《La Vita》",
+            "singer":"仝卓/马佳/星元",
+            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+            "remark":"“Quanti giorni vuoti 多少虚无的日子 Quanti giorni tristi 多少悲伤的日子 In questa nostra vita 我们无时无刻不经历着”",
+            "type":2
+        },
+        {
+            "name":"《今夜无人入睡》",
+            "singer":"高天鹤/仝卓/马佳",
+            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+            "remark":"“Quando la luce splenderà ,Ed il mio bacio scioglierà il silenzio ,Che ti fa mia”",
+            "type":2
+        },
+        {
+            "name":"《饮酒歌》",
+            "singer":"南枫",
+            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+            "remark":"“Libiamo libiamo ne'lieti calici ,Che la belleza infiora”",
+            "type":2
+        },
+        {
+            "name":"《冰凉的小手》",
+            "singer":"马佳",
+            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+            "remark":"“Che gelida manina ，Se la lasci riscaldar”",
+            "type":2
+        },
+        {
+            "name":"《Melodramma》",
+            "singer":"方书剑/蔡程昱",
+            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+            "remark":"“Questa mia canzone，Inno dell' amore”",
+            "type":2
+        }
+      ]
