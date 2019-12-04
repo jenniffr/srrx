@@ -2,6 +2,8 @@
   <div>
     <swiper
       :indicator-dots="indicatorDots"
+      indicator-color="pink" 
+      indicator-active-color="green"
       :autoplay="autoplay"
       :interval="interval"
       :duration="duration"
@@ -54,7 +56,7 @@ export default {
         'https://img.rednet.cn/2019/01-21/50788649-5f11-4b2b-bd32-56d1790cd6e7.jpg',
         'https://img.rednet.cn/2019/01-21/a8384c2c-a806-4341-a486-9e9ea3d708f6.jpg'
       ],
-      indicatorDots: false,
+      indicatorDots: true,
       autoplay: false,
       interval: 5000,
       duration: 1000
