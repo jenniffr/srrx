@@ -16,7 +16,7 @@
     </swiper>
 
     <i-grid i-class="no-border"> 
-    <i-grid-item @click="goList(grid)" v-for="grid in grids" :key="grid" i-class="no-border" >
+    <i-grid-item @click="goType(grid.type)" v-for="grid in grids" :key="grid" i-class="no-border" >
         <i-grid-icon>
             <image :src="grid.image" />
         </i-grid-icon>
@@ -43,9 +43,9 @@ export default {
   data () {
     return {
       grids:[
-        {title:"音乐剧",image:"/static/images/1.png","url":'../list/main?type=1'},
-        {title:"歌剧",image:"/static/images/2.png","url":'../list/main?type=2'},
-        {title:"古风",image:"/static/images/3.png","url":'../list/main?type=3'}
+        {title:"音乐剧",image:"/static/images/1.png",type:1},
+        {title:"歌剧",image:"/static/images/2.png",type:2},
+        {title:"古风",image:"/static/images/3.png",type:3}
       ],
       top:top,
       imgUrls: [
@@ -66,9 +66,9 @@ export default {
   },
 
   methods: {
-     goList(type){
+     goType(type){
       console.log(type)
-      let url = '../list/main?type=' + type.title
+      let url = '../list/main?type=' + type
       mpvue.navigateTo({ url })
     },
     goType(type){
