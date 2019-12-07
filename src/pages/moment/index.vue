@@ -4,7 +4,7 @@
       <input @confirm="handleSearch" confirm-type="搜索" v-model="searchContent" type="text" placeholder="高雅不冬眠" placeholder-class="placeholder">
       <span @click="handleClear" class="clear" v-show="searchContent">×</span>
     </div>
-    <List :singsArr="singsArr"/>
+    
   </div>
 </template>
 

@@ -1,0 +1,107 @@
+[
+    {
+        "name":"《诗人的路途》",
+        "singer":"郑云龙/廖佳琳",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“流浪诗人有自己的旅途 在喧闹的巷口 在荒凉的峡谷 在远离尘埃的角落”",
+        "type":1
+    },
+    {
+        "name":"《心脏》",
+        "singer":"阿云嘎",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“不管海水多么冰凉 我依然有一颗心脏”",
+        "type":1
+    },
+    {
+        "name":"《I Dream A Dream》",
+        "singer":"高天鹤/李琦",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“There was a time when love was blind  ，And the world was a song”",
+        "type":1
+    },
+    {
+        "name":"《Seasons of love》",
+        "singer":"高扬/陆宇鹏/李琦",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Five hundred twenty-five thousand six hundred minutes  ，Five hundred twenty-five thousand moments so dear”",
+        "type":1
+    },
+    {
+        "name":"《世界之王》",
+        "singer":"余笛/洪之光/阿云嘎",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Les rois du monde vivent au sommet ，Ils ont la plus belle vue mais y a un mais”",
+        "type":1
+    },
+    {
+        "name":"《La Vita》",
+        "singer":"仝卓/马佳/星元",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Quanti giorni vuoti 多少虚无的日子 Quanti giorni tristi 多少悲伤的日子 In questa nostra vita 我们无时无刻不经历着”",
+        "type":2
+    },
+    {
+        "name":"《今夜无人入睡》",
+        "singer":"高天鹤/仝卓/马佳",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Quando la luce splenderà ,Ed il mio bacio scioglierà il silenzio ,Che ti fa mia”",
+        "type":2
+    },
+    {
+        "name":"《饮酒歌》",
+        "singer":"南枫",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Libiamo libiamo ne'lieti calici ,Che la belleza infiora”",
+        "type":2
+    },
+    {
+        "name":"《冰凉的小手》",
+        "singer":"马佳",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Che gelida manina ，Se la lasci riscaldar”",
+        "type":2
+    },
+    {
+        "name":"《Melodramma》",
+        "singer":"方书剑/蔡程昱",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Questa mia canzone，Inno dell' amore”",
+        "type":2
+    },
+    {
+        "name":"《慢慢喜欢你》",
+        "singer":"王晰/郑云龙",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“书里总爱写到喜出望外的夜晚”",
+        "type":3
+    },
+    {
+        "name":"《往日时光》",
+        "singer":"阿云嘎/王晰",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“人生中最美的珍藏 正是那些往日时光”",
+        "type":2
+    },
+    {
+        "name":"《雪花的快乐》",
+        "singer":"黄子弘凡/方书剑/张超/梁朋杰",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“假如我是一朵雪花，翩翩的在半空中潇洒”",
+        "type":3
+    },
+    {
+        "name":"《鹿 Be Free》",
+        "singer":"阿云嘎/蔡程昱",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“看青草 穿白雪 听见森林的音乐”",
+        "type":3
+    },
+    {
+        "name":"《故乡的云》",
+        "singer":"余笛/洪之光",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“天边飘过故乡的云 它不停地向我召唤”",
+        "type":3
+    }
+  ]

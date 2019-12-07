@@ -1,6 +1,6 @@
 <template>
   <div>
-    <i-card v-for="item in list" :key="item" i-class="split" :extra="item.name" :thumb="item.image">
+    <i-card @click="goInfo(item)" v-for="item in list" :key="item" i-class="split" :extra="item.name" :thumb="item.image">
          <view slot="content">片段:{{item.remark}}</view>
          <view slot="footer">歌手:{{item.singer}}</view>
     </i-card> 
@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import datas from '@/data/singdata.json'
 
 export default {
   data () {
@@ -22,6 +23,13 @@ export default {
   },
   onShareAppMessage(){
     console.log('用户点击转发');
+  },
+  methods: {
+    goInfo(item){
+      mpvue.navigateTo({
+        url:'/pages/singInfo/main?item=' + JSON.stringify(item)
+      })
+    }
   },
 
   created () {

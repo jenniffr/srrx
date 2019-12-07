@@ -26,7 +26,7 @@
 
     <i-panel title="热门歌曲">
     <view style="padding: 15px;">
-      <i-card @click="goType(item.type)" v-for="item in top" :key="item" i-class="split" :extra="item.name" :thumb="item.image">
+      <i-card @click="goInfo(item)" v-for="item in top" :key="item" i-class="split" :extra="item.name" :thumb="item.image">
          <view slot="content">片段:{{item.remark}}</view>
          <view slot="footer">歌手:{{item.singer}}</view>
       </i-card>
@@ -45,7 +45,7 @@ export default {
       grids:[
         {title:"音乐剧",image:"/static/images/1.png",type:1},
         {title:"歌剧",image:"/static/images/2.png",type:2},
-        {title:"古风",image:"/static/images/3.png",type:3}
+        {title:"流行",image:"/static/images/3.png",type:3}
       ],
       top:top,
       imgUrls: [
@@ -71,10 +71,10 @@ export default {
       let url = '../list/main?type=' + type
       mpvue.navigateTo({ url })
     },
-    goType(type){
-      //console.log(type)
-      let url = '../list/main?type=' + type
-      mpvue.navigateTo({ url })
+    goInfo(item){
+      mpvue.navigateTo({
+        url:'/pages/singInfo/main?item=' + JSON.stringify(item)
+      })
     }
   },
 
