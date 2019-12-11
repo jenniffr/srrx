@@ -16,8 +16,8 @@ let data = require('./data/data.json');
 router.get('/searchSings',(ctx,next) => {   
     let req = ctx.query.req;
     console.log('获取请求参数：', req);
-    let singsArr = data;
-    ctx.body = singsArr;
+    let singInfo = data;
+    ctx.body = singInfo;
 });
 
 

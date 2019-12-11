@@ -1,15 +1,14 @@
 <template>
   <div>
-    <i-card @click="goInfo(item)" v-for="item in list" :key="item" i-class="split" :extra="item.name" :thumb="item.image">
-         <view slot="content">片段:{{item.remark}}</view>
-         <view slot="footer">歌手:{{item.singer}}</view>
+    <i-card @click="goInfo(singItem)" v-for="singItem in list" :key="singItem" i-class="split" :extra="singItem.name" :thumb="singItem.image">
+         <view slot="content">片段:{{singItem.remark}}</view>
+         <view slot="footer">歌手:{{singItem.singer}}</view>
     </i-card> 
-    <button open-type="share" class="shareBtn">分享</button>
   </div>
 </template>
 
 <script>
-import datas from '@/data/singdata.json'
+import list from '@/data/singdata.json'
 
 export default {
   data () {
@@ -21,13 +20,10 @@ export default {
     console.log(option.type)
     this.list = require('@/data/' + option.type + '.json')
   },
-  onShareAppMessage(){
-    console.log('用户点击转发');
-  },
   methods: {
-    goInfo(item){
+    goInfo(singItem){
       mpvue.navigateTo({
-        url:'/pages/singInfo/main?item=' + JSON.stringify(item)
+        url:'/pages/singInfo/main?singItem=' + JSON.stringify(singItem)
       })
     }
   },

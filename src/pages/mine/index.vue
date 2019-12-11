@@ -1,11 +1,15 @@
 <template>
-  <div>
-    <view class="userinfo">
-    <view class="userinfo-avatar">
-    <open-data type="userAvatarUrl"></open-data>
-    </view>
-    <open-data type="userNickName"></open-data>
-    </view>
+  <div id="mineContainer">
+    <div class="header">
+      <img :src="userInfo.avatarUrl?userInfo.avatarUrl:''" alt="">
+      <button open-type="getUserInfo" @getuserinfo="handleGetUserInfo">{{userInfo.nickName?userInfo.nickName:'登录'}}</button>
+    </div>
+    <div class="cardList">
+      <div class="card">
+        <span>我的收藏</span>
+        <span class="more"> > </span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -14,9 +18,26 @@
 export default {
   data () {
     return {
+      userInfo: {}
     }
   },
   methods: {
+    handleGetUserInfo(res){
+      if(res.mp.detail.userInfo){
+        this.userInfo = res.mp.detail.userInfo
+      }
+    }
+  },
+  mounted(){
+    wx.getUserInfo({
+      success: (res) => {
+        console.log(res.userInfo);
+        this.userInfo = res.userInfo
+      },
+      fail: () => {
+        console.log('获取失败');
+      }
+    })
   },
 
   created () {
@@ -24,31 +45,32 @@ export default {
 }
 </script>
 
-<style scoped>
-.userinfo {
-  position: relative;
-  width: 750rpx;
-  height: 320rpx;
-  color: #666;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
- 
-.userinfo-avatar {
-  overflow:hidden;
-  display: block;
-  width: 160rpx;
-  height: 160rpx;
-  margin: 20rpx;
-  margin-top: 50rpx;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-}
-.tips {
-  padding: 20pt;
-  font-size: 10pt;
-  color:darkorange;
-}
+<style lang="stylus" rel="stylesheet/stylus">
+#mineContainer
+  .header 
+    padding 40rpx
+    background #228B22
+    img
+      width 100rpx
+      height 100rpx
+      vertical-align middle
+      border-radius 50rpx
+    button 
+      display inline-block
+      height 60rpx
+      line-height 60rpx
+      background rgba(255, 255, 255, 0.5)
+      vertical-align middle
+      margin-left 40rpx
+      max-width 200rpx
+  .cardList
+    .card
+      width 92%
+      height 60rpx
+      line-height 60rpx
+      margin 10rpx auto 
+      border 1rpx solid #eee
+      padding 10rpx
+      .more
+        float right
 </style>

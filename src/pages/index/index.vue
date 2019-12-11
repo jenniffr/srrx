@@ -64,9 +64,9 @@ export default {
   component: {
     card
   },
-
+ 
   methods: {
-     goType(type){
+    goType(type){
       console.log(type)
       let url = '../list/main?type=' + type
       mpvue.navigateTo({ url })
