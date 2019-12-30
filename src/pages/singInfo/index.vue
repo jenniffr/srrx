@@ -2,12 +2,17 @@
   <div id="singContainer">
     <div class="singInfo">
       <h1>{{singItem.name}}</h1>
-      <img :src="singItem.image" alt="">
+      <video :src="singItem.url"  @click="init" controls />
+      <div class="danmuArea">
+        <input type="text" placeholder="请输入弹幕内容">
+        <button>发送弹幕</button>
+      </div>
       <div class="info">
           <p>歌手:{{singItem.singer}}</p>
           <p>介绍:{{singItem.remark}}</p>
       </div>
     </div>
+    
     <button open-type="share" class="shareBtn">分享</button>
     <div class="content">
       <article>
@@ -17,13 +22,10 @@
           </section>
       </article>
     </div>
-    <div>
-      <audio :name="singItem.name" :src="singItem.src" id="myAudio" controls loop></audio>
-
+   
+    <div id="video">
+      
       <button type="primary" bindtap="audioPlay">播放</button>
-      <button type="primary" bindtap="audioPause">暂停</button>
-      <button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
-      <button type="primary" bindtap="audioStart">回到开头</button>
     </div>
   </div>
 </template>
@@ -33,36 +35,26 @@
 export default {
   data () {
     return {
-        singItem: {}
+        singItem:{},
+        videoUrl: 'http://resource.yaokan.sogoucdn.com/video/fef0/275/a2b75c3b7fd6556be67655199a296cad.mp4'
      }
   },
-  onReady (e) {
-    // 使用 wx.createAudioContext 获取 audio 上下文 context
-    this.audioCtx = wx.createAudioContext('myAudio')
-    this.audioCtx.play()
+
+  onLoad: function (options) {
+    this.videoCtx=wx.createVideoContext('myVideo')
   },
-  methods: {
-    audioPlay: function () {
-      this.audioCtx.play()
-    },
-    audioPause: function () {
-      this.audioCtx.pause()
-    },
-    audio14: function () {
-      this.audioCtx.seek(14)
-    },
-    audioStart: function () {
-      this.audioCtx.seek(0)
-    }
+
+  onReady: function () {
+
   },
-  
+
   mounted(){
         this.singItem = JSON.parse(this.$mp.query.singItem)
         mpvue.setNavigationBarTitle({
           title: this.singItem.name
         }) 
   },
-  shareAppMessage(){
+  onShareAppMessage(){
     console.log('用户点击转发');
   },
 
@@ -81,10 +73,18 @@ export default {
        font-size 40rpx
        font-weight bold
        margin 10rpx 0
-     img
-       width 70%
-       height 700rpx
-       margin 0 auto  
+     video  
+       width 100% 
+     .danmuArea
+       display flex
+       flex-direction row
+       input 
+         border 1rpx solid #228b22
+         height 100rpx
+         flex-grow 1
+       button 
+         color white
+         background-color #228b22
      .info
        margin-left 5%
        p
@@ -93,7 +93,7 @@ export default {
      width 300rpx
      height 80rpx
      line-height 80rpx
-     text-align center
+     text-align center 
      margin 20rpx auto 
    .content
      margin 30rpx
@@ -107,4 +107,5 @@ export default {
        section 
          font-size 28rpx
          text-indent 28rpx
+     
 </style>

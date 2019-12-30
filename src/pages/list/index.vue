@@ -19,12 +19,14 @@ export default {
   onLoad (option){
     console.log(option.type)
     this.list = require('@/data/' + option.type + '.json')
+    console.log(option)
   },
   methods: {
     goInfo(singItem){
       mpvue.navigateTo({
         url:'/pages/singInfo/main?singItem=' + JSON.stringify(singItem)
       })
+      console.log(singItem)
     }
   },
 

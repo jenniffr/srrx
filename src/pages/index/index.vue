@@ -26,9 +26,9 @@
 
     <i-panel title="热门歌曲">
     <view style="padding: 15px;">
-      <i-card @click="goInfo(item)" v-for="item in top" :key="item" i-class="split" :extra="item.name" :thumb="item.image">
-         <view slot="content">片段:{{item.remark}}</view>
-         <view slot="footer">歌手:{{item.singer}}</view>
+      <i-card @click="goInfo(singItem)" v-for="singItem in top" :key="singItem" i-class="split" :extra="singItem.name" :thumb="singItem.image">
+         <view slot="content">片段:{{singItem.remark}}</view>
+         <view slot="footer">歌手:{{singItem.singer}}</view>
       </i-card>
     </view>
     </i-panel>
@@ -64,6 +64,8 @@ export default {
   component: {
     card
   },
+
+  
  
   methods: {
     goType(type){
@@ -71,10 +73,10 @@ export default {
       let url = '../list/main?type=' + type
       mpvue.navigateTo({ url })
     },
-    goInfo(item){
+    goInfo(singItem){
       mpvue.navigateTo({
-        url:'/pages/singInfo/main?item=' + JSON.stringify(item)
-      })
+        url:'/pages/singInfo/main?singItem=' + JSON.stringify(singItem)
+      }) 
     }
   },
 

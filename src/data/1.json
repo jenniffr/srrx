@@ -1,38 +1,43 @@
 
 [
-        {
-            "name":"《诗人的路途》",
-            "singer":"郑云龙/廖佳琳",
-            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-            "remark":"“流浪诗人有自己的旅途 在喧闹的巷口 在荒凉的峡谷 在远离尘埃的角落”",
-            "type":1
-        },
-        {
-            "name":"《心脏》",
-            "singer":"阿云嘎",
-            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-            "remark":"“不管海水多么冰凉 我依然有一颗心脏”",
-            "type":1
-        },
-        {
-            "name":"《I Dream A Dream》",
-            "singer":"高天鹤/李琦",
-            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-            "remark":"“There was a time when love was blind  ，And the world was a song”",
-            "type":1
-        },
-        {
-            "name":"《Seasons of love》",
-            "singer":"高扬/陆宇鹏/李琦",
-            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-            "remark":"“Five hundred twenty-five thousand six hundred minutes  ，Five hundred twenty-five thousand moments so dear”",
-            "type":1
-        },
-        {
-            "name":"《世界之王》",
-            "singer":"余笛/洪之光/阿云嘎",
-            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-            "remark":"“Les rois du monde vivent au sommet ，Ils ont la plus belle vue mais y a un mais”",
-            "type":1
-        }
-      ]
+    {
+        "name":"《诗人的路途》",
+        "singer":"郑云龙/廖佳琳",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“流浪诗人有自己的旅途 在喧闹的巷口 在荒凉的峡谷 在远离尘埃的角落”",
+        "url":"http://resource.yaokan.sogoucdn.com/video/fef0/275/a2b75c3b7fd6556be67655199a296cad.mp4",
+        "type":1
+    },
+    {
+        "name":"《心脏》",
+        "singer":"阿云嘎",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“不管海水多么冰凉 我依然有一颗心脏”",
+        "url":"http://resource.yaokan.sogoucdn.com/video/fef0/227/fc2c2e7350aa6d3f968dad5510543449.mp4",
+        "type":1
+    },
+    {
+        "name":"《I Dream A Dream》",
+        "singer":"高天鹤/李琦",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“There was a time when love was blind  ，And the world was a song”",
+        "url":"https://v.qq.com/x/page/m09110nt5fn.html",
+        "type":1
+    },
+    {
+        "name":"《Seasons of love》",
+        "singer":"高扬/陆宇鹏/李琦",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Five hundred twenty-five thousand six hundred minutes  ，Five hundred twenty-five thousand moments so dear”",
+        "url":"http://resource.yaokan.sogoucdn.com/video/fef0/227/fc2c2e7350aa6d3f968dad5510543449.mp4",
+        "type":1
+    },
+    {
+        "name":"《世界之王》",
+        "singer":"余笛/洪之光/阿云嘎",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Les rois du monde vivent au sommet ，Ils ont la plus belle vue mais y a un mais”",
+        "url":"http://resource.yaokan.sogoucdn.com/video/fef0/098/fa098f8e4a5b5c5f03ac705e5edacac5.mp4",
+        "type":1
+    }
+]
