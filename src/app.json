@@ -3,9 +3,9 @@
     "pages/firstView/main",
     "pages/index/main",
     "pages/list/main",
+    "pages/singInfo/main",
     "pages/moment/main",
-    "pages/mine/main",
-    "pages/singInfo/main"
+    "pages/mine/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -37,17 +37,6 @@
         "selectedIconPath": "static/images/1.png"
     }],
 
-    "items": [{
-      "name": "首页",
-      "pagePath": "pages/index/main",
-      "icon": "static/tabs/home.png",
-      "activeIcon": "static/tabs/home-active.png"
-    }, {
-      "name": "订单",
-      "pagePath": "pages/logs/main",
-      "icon": "static/tabs/orders.png",
-      "activeIcon": "static/tabs/orders-active.png"
-    }],
     "position": "bottom"
   }
 }

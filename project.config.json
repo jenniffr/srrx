@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"appid": "wxb33a5d7147581306",
 	"projectname": "srrx",
-	"libVersion": "2.6.2",
+	"libVersion": "2.9.4",
 	"condition": {
 		"search": {
 			"current": -1,

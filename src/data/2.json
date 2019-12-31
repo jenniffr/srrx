@@ -1,42 +1,42 @@
 [
-        {
-            "name":"《La Vita》",
-            "singer":"仝卓/马佳/星元",
-            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-            "remark":"“Quanti giorni vuoti 多少虚无的日子 Quanti giorni tristi 多少悲伤的日子 In questa nostra vita 我们无时无刻不经历着”",
-            "url":"http://resource.yaokan.sogoucdn.com/video/fef0/197/197d5d582b69cf23adefd65ec69537d3.mp4",
-            "type":2
-        },
-        {
-            "name":"《今夜无人入睡》",
-            "singer":"高天鹤/仝卓/马佳",
-            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-            "remark":"“Quando la luce splenderà ,Ed il mio bacio scioglierà il silenzio ,Che ti fa mia”",
-            "url":"http://resource.yaokan.sogoucdn.com/video/fef0/557/bd55761aa314f81012fbf04990f6c476.mp4",
-            "type":2
-        },
-        {
-            "name":"《饮酒歌》",
-            "singer":"廖昌永",
-            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-            "remark":"“Libiamo libiamo ne'lieti calici ,Che la belleza infiora”",
-            "url":"http://resource.yaokan.sogoucdn.com/videodown/4506/420/f42086f2236b29e4a63132292b3ece2a.mp4",
-            "type":2
-        },
-        {
-            "name":"《冰凉的小手》",
-            "singer":"马佳",
-            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-            "remark":"“Che gelida manina ，Se la lasci riscaldar”",
-            "url":"http://resource.yaokan.sogoucdn.com/video/fef0/855/ba8557c7f9844f6565e40a1fe7aaabae.mp4",
-            "type":2
-        },
-        {
-            "name":"《Melodramma》",
-            "singer":"方书剑/蔡程昱",
-            "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-            "remark":"“Questa mia canzone，Inno dell' amore”",
-            "url":"http://resource.yaokan.sogoucdn.com/video/fef0/341/ceb341504b7bee915b3ab898804e8e38.mp4",
-            "type":2
-        }
-      ]
+    {
+        "name":"《La Vita》",
+        "singer":"仝卓/马佳/星元",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Quanti giorni vuoti 多少虚无的日子 Quanti giorni tristi 多少悲伤的日子 In questa nostra vita 我们无时无刻不经历着”",
+        "url":"http://resource.yaokan.sogoucdn.com/video/fef0/197/197d5d582b69cf23adefd65ec69537d3.mp4",
+        "type":2
+    },
+    {
+        "name":"《今夜无人入睡》",
+        "singer":"高天鹤/仝卓/马佳",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Quando la luce splenderà ,Ed il mio bacio scioglierà il silenzio ,Che ti fa mia”",
+        "url":"http://resource.yaokan.sogoucdn.com/video/fef0/557/bd55761aa314f81012fbf04990f6c476.mp4",
+        "type":2
+    },
+    {
+        "name":"《饮酒歌》",
+        "singer":"廖昌永",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Libiamo libiamo ne'lieti calici ,Che la belleza infiora”",
+        "url":"http://resource.yaokan.sogoucdn.com/videodown/4506/420/f42086f2236b29e4a63132292b3ece2a.mp4",
+        "type":2
+    },
+    {
+        "name":"《冰凉的小手》",
+        "singer":"马佳",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Che gelida manina ，Se la lasci riscaldar”",
+        "url":"http://resource.yaokan.sogoucdn.com/video/fef0/855/ba8557c7f9844f6565e40a1fe7aaabae.mp4",
+        "type":2
+    },
+    {
+        "name":"《Melodramma》",
+        "singer":"方书剑/蔡程昱",
+        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "remark":"“Questa mia canzone，Inno dell' amore”",
+        "url":"http://resource.yaokan.sogoucdn.com/video/fef0/341/ceb341504b7bee915b3ab898804e8e38.mp4",
+        "type":2
+    }
+]

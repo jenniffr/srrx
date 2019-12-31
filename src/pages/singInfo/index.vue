@@ -2,10 +2,10 @@
   <div id="singContainer">
     <div class="singInfo">
       <h1>{{singItem.name}}</h1>
-      <video :src="singItem.url"  @click="init" controls />
+      <video :src="singItem.url" enable-danmu danmu-btn controls />
       <div class="danmuArea">
-        <input type="text" placeholder="请输入弹幕内容">
-        <button>发送弹幕</button>
+        <input type="text" placeholder="请输入弹幕内容" bindinput="getDanmu" :value="danmuTxt"/>
+        <button bindtap="sendDanmu">发送弹幕</button>
       </div>
       <div class="info">
           <p>歌手:{{singItem.singer}}</p>
@@ -22,11 +22,6 @@
           </section>
       </article>
     </div>
-   
-    <div id="video">
-      
-      <button type="primary" bindtap="audioPlay">播放</button>
-    </div>
   </div>
 </template>
 
@@ -36,17 +31,26 @@ export default {
   data () {
     return {
         singItem:{},
-        videoUrl: 'http://resource.yaokan.sogoucdn.com/video/fef0/275/a2b75c3b7fd6556be67655199a296cad.mp4'
+        danmuTxt:''
      }
-  },
-
-  onLoad: function (options) {
-    this.videoCtx=wx.createVideoContext('myVideo')
   },
 
   onReady: function () {
 
   },
+
+  
+  getDanmu:function(e){
+    this.danmuTxt=e.mp.detail.detail.value
+  },
+  sendDanmu:function(e){
+    let text=this.data.danmuTxt
+    this.video.sendDanmu({
+      text: text,
+      color: green
+    })
+  },
+  
 
   mounted(){
         this.singItem = JSON.parse(this.$mp.query.singItem)
@@ -54,6 +58,7 @@ export default {
           title: this.singItem.name
         }) 
   },
+  
   onShareAppMessage(){
     console.log('用户点击转发');
   },
