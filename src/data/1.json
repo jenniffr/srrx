@@ -3,40 +3,45 @@
     {
         "name":"《诗人的路途》",
         "singer":"郑云龙/廖佳琳",
-        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-        "remark":"“流浪诗人有自己的旅途 在喧闹的巷口 在荒凉的峡谷 在远离尘埃的角落”",
+        "image":"http://himg2.huanqiu.com/attachment2010/2018/1118/20181118023236342.jpeg",
+        "section":"“流浪诗人有自己的旅途 在喧闹的巷口 在荒凉的峡谷 在远离尘埃的角落”",
+        "remark":"选自中国著名的原创音乐剧《蝶》，歌曲中梁山伯化身流浪诗人，慢慢诉说着旅途的所见所闻，将诗情画意展现在大家面前",
         "url":"http://resource.yaokan.sogoucdn.com/video/fef0/275/a2b75c3b7fd6556be67655199a296cad.mp4",
         "type":1
     },
     {
         "name":"《心脏》",
         "singer":"阿云嘎",
-        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-        "remark":"“不管海水多么冰凉 我依然有一颗心脏”",
+        "image":"https://wx2.sinaimg.cn/mw1024/78f0c53ely1fymfcvdkdjj21900u0e8e.jpg",
+        "section":"“不管海水多么冰凉 我依然有一颗心脏”",
+        "remark":"国内首部音乐剧《蝶》选段，该剧被誉为“中国音乐剧发展的里程碑”",
         "url":"http://resource.yaokan.sogoucdn.com/video/fef0/227/fc2c2e7350aa6d3f968dad5510543449.mp4",
         "type":1
     },
     {
         "name":"《Memory》",
         "singer":"周深",
-        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-        "remark":"“There was a time when love was blind  ，And the world was a song”",
+        "image":"https://wx3.sinaimg.cn/mw1024/678857afgy1fvkximyzraj22io1oge84.jpg",
+        "section":"“There was a time when love was blind  ，And the world was a song”",
+        "remark":"四大音乐剧之一《猫》选段，这是剧中“魅力猫”在外流浪后重返猫族的唱段，阐述今非昔比的遭遇，强烈地表达了对新生活的渴望",
         "url":"http://resource.yaokan.sogoucdn.com/videodown/4506/674/cc6744368e94a64c5d48f50627299704.mp4",
         "type":1
     },
     {
         "name":"《Seasons of love》",
         "singer":"高扬/陆宇鹏/李琦",
-        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-        "remark":"“Five hundred twenty-five thousand six hundred minutes  ，Five hundred twenty-five thousand moments so dear”",
+        "image":"https://3img.hitv.com/preview/sp_images/2018/11/9/zongyi/326363/4712881/20181109211959202.jpg",
+        "section":"“Five hundred twenty-five thousand six hundred minutes  ，Five hundred twenty-five thousand moments so dear”",
+        "remark":"音乐剧《吉屋出租》选段，该剧改编自普契尼经典歌剧《波西米亚人》，歌曲充满复古爵士风格，讲述了一群年轻人在逆境中仍旧心怀梦想的故事",
         "url":"http://sofa.resource.shida.sogoucdn.com/63de4ee2-50e2-4a3c-aba5-846b245b81042_0_0.mp4",
         "type":1
     },
     {
         "name":"《世界之王》",
         "singer":"余笛/洪之光/阿云嘎",
-        "image":"https://i.loli.net/2017/08/21/599a521472424.jpg",
-        "remark":"“Les rois du monde vivent au sommet ，Ils ont la plus belle vue mais y a un mais”",
+        "image":"https://i5.hitv.com/p1/20181214/1000293566.jpg",
+        "section":"“Les rois du monde vivent au sommet ，Ils ont la plus belle vue mais y a un mais”",
+        "remark":"音乐剧《罗密欧与朱丽叶》选段，歌曲作为剧中经典唱段，其简单且富有节奏感的旋律震撼人心",
         "url":"http://resource.yaokan.sogoucdn.com/video/fef0/098/fa098f8e4a5b5c5f03ac705e5edacac5.mp4",
         "type":1
     }

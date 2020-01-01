@@ -2,10 +2,10 @@
   <div id="singContainer">
     <div class="singInfo">
       <h1>{{singItem.name}}</h1>
-      <video :src="singItem.url" enable-danmu danmu-btn controls />
+      <video id="myVideo" :src="singItem.url" :danmu-list="danmuList" enable-danmu danmu-btn controls />
       <div class="danmuArea">
-        <input type="text" placeholder="请输入弹幕内容" bindinput="getDanmu" :value="danmuTxt"/>
-        <button bindtap="sendDanmu">发送弹幕</button>
+        <input type="text" placeholder="请输入弹幕内容" v-model="danmuList" />
+        <button bindtap="bindSendDanmu">发送弹幕</button>
       </div>
       <div class="info">
           <p>歌手:{{singItem.singer}}</p>
@@ -31,25 +31,44 @@ export default {
   data () {
     return {
         singItem:{},
-        danmuTxt:''
+        danmuList: [
+      {
+        text: '第 1s 出现的弹幕',
+        color: '#ff0000',
+        time: 1
+      },
+      {
+        text: '第 3s 出现的弹幕',
+        color: '#ff00ff',
+        time: 3
+    }]
      }
   },
 
-  onReady: function () {
-
+  getRandomColor: function () {
+    let rgb = []
+    for (let i = 0; i < 3; ++i) {
+      let color = Math.floor(Math.random() * 256).toString(16)
+      color = (color.length == 1) ? '0' + color : color
+      rgb.push(color)
+    }
+    return '#' + rgb.join('')
   },
 
-  
-  getDanmu:function(e){
-    this.danmuTxt=e.mp.detail.detail.value
+
+  onReady: function (res) {
+    this.videoContext = wx.createVideoContext('myVideo')
   },
-  sendDanmu:function(e){
-    let text=this.data.danmuTxt
-    this.video.sendDanmu({
-      text: text,
-      color: green
+  bindInputBlur: function(e) {
+    this.inputValue = e.detail.value
+  },
+  bindSendDanmu: function () {
+    this.videoContext.sendDanmu({
+      text: this.danmuList,
+      color: getRandomColor()
     })
   },
+  inputValue:'',
   
 
   mounted(){
