@@ -27,7 +27,7 @@
     <i-panel title="热门歌曲">
     <view style="padding: 15px;">
       <i-card @click="goInfo(singItem)" v-for="singItem in top" :key="singItem" i-class="split" :extra="singItem.name" :thumb="singItem.image">
-         <view slot="content">片段:{{singItem.remark}}</view>
+         <view slot="content">片段:{{singItem.section}}</view>
          <view slot="footer">歌手:{{singItem.singer}}</view>
       </i-card>
     </view>
@@ -43,9 +43,9 @@ export default {
   data () {
     return {
       grids:[
-        {title:"音乐剧",image:"/static/images/1.png",type:1},
+        {title:"音乐剧",image:"/static/images/(1).png",type:1},
         {title:"歌剧",image:"/static/images/2.png",type:2},
-        {title:"流行",image:"/static/images/3.png",type:3}
+        {title:"流行&美声",image:"/static/images/3.png",type:3}
       ],
       top:top,
       imgUrls: [

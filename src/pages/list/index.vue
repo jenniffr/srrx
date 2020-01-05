@@ -1,7 +1,7 @@
 <template>
   <div>
     <i-card @click="goInfo(singItem)" v-for="singItem in list" :key="singItem" i-class="split" :extra="singItem.name" :thumb="singItem.image">
-         <view slot="content">片段:{{singItem.remark}}</view>
+         <view slot="content">片段:{{singItem.section}}</view>
          <view slot="footer">歌手:{{singItem.singer}}</view>
     </i-card> 
   </div>

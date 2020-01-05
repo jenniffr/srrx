@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/firstView/main",
     "pages/index/main",
     "pages/list/main",
     "pages/singInfo/main",
