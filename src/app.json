@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/first/main",
     "pages/index/main",
     "pages/list/main",
     "pages/singInfo/main",
@@ -25,7 +26,7 @@
       "iconPath": "static/images/home.1.png",
       "selectedIconPath": "static/images/home.png"
     }, {
-      "text": "动态",
+      "text": "搜索",
       "pagePath": "pages/moment/main",
       "iconPath": "static/images/4.1.png",
       "selectedIconPath": "static/images/4.png"

@@ -12,8 +12,8 @@
     </div>
     <i-panel title="我要推荐">
     <i-input :value="name" @change="changeName($event)" title="歌曲名称" autofocus placeholder="名称" maxlength="20"/>
-    <i-input :value="remark" @change="changeRemark($event)" title="歌曲介绍" placeholder="地址" maxlength="20" />
-    <i-input :value="singer" @change="changeSinger($event)" title="演唱歌手" placeholder="介绍" maxlength="50" />
+    <i-input :value="remark" @change="changeRemark($event)" title="歌曲介绍" placeholder="简介" maxlength="50" />
+    <i-input :value="singer" @change="changeSinger($event)" title="演唱歌手" placeholder="姓名" maxlength="50" />
     <i-button @click="handleClick()">我要推荐</i-button>
     <i-toast id="toast" />
     </i-panel>

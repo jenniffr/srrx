@@ -2,6 +2,7 @@
  <div>
     <view class="bar">
         <input type="text" v-model="searchString" placeholder="高雅不冬眠" />
+        <span @click="handleClear" class="clear" v-show="searchString">×</span>
     </view>
     <div class="content">   
         <view class="name" @click="goInfo(singItem)" v-for="singItem in filteredSingItems" :key="singItem">
@@ -48,7 +49,10 @@ export default {
         url:'/pages/singInfo/main?singItem=' + JSON.stringify(singItem)
       })
       console.log(singItem)
-    }
+    },
+    handleClear(){
+      this.searchString = ''
+    },
   }
 }
 </script>
@@ -75,9 +79,14 @@ export default {
       text-indent: 40px;     
   }
   .bar placeholder{
-    color: #228b22;
+    text-decoration-color: #228b22;
   } 
-
+  .clear{
+      position: absolute;
+      right: 20rpx;
+      top: 20rpx;
+      z-index: 30;
+  }
   .content{
       list-style: none;
       width: 428px;
